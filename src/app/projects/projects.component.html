@@ -1,0 +1,9 @@
+<div class="center-column">
+  <div class="project-item" *ngFor="let project of projects">
+    <h4>{{project.title}}</h4>
+    <img src={{project.imgLocation}} width="50%">
+    <p class="subtitle" style="margin: 0">{{project.applicationType}}</p>
+    <p class="thin-subtitle" [innerHTML]="project.description | projectKeyword"></p>
+  </div>
+  <div style="height: 4em"></div>
+</div>

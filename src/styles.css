@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+body {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, p, span {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+.body-text {
+  color: white;
+  width: 50%;
+  margin: 1em auto;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .body-text {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .very-thin-subtitle {
+    font-size: 14px;
+  }
+
+  .thin-subtitle {
+    font-size: 14px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px){
+  .body-text {
+    font-size: 16px;
+  }
+
+  .very-thin-subtitle {
+    font-size: 16px;
+  }
+
+  .thin-subtitle {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+.very-thin-subtitle {
+  font-family: Montserrat, serif;
+  font-weight: 200;
+}
+
+.thin-subtitle {
+  font-family: Montserrat, serif;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-family: Montserrat, serif;
+  font-weight: 400;
+}
+
+.dark-background {
+  background: #555555;
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center
+}
+
+.active {
+  color: #1DAEDD;
+}

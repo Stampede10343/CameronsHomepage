@@ -1,0 +1,26 @@
+.icon-text {
+  margin: 0 8px;
+  line-height: 32px
+}
+
+.icon {
+  height: 32px;
+}
+
+.icon-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em .5em 1em .5em;
+  padding: .5em;
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  -ms-transition: color 300ms;
+  -o-transition: color 300ms;
+  transition: color 300ms;
+}
+
+.icon-layout:hover {
+  color: #0FA0CE;
+  cursor: pointer;
+}

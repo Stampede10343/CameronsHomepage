@@ -1,0 +1,21 @@
+.overlay {
+  background: black;
+  position: relative;
+}
+
+.image {
+  opacity: 0.1;
+  width: 100%;
+  height: auto;
+}
+
+.home-container {
+  background: #2f2f31;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.overlay-text {
+  color: white;
+}
