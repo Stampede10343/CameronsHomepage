@@ -12,3 +12,9 @@ span:hover {
   color: #1DAEDD;
   cursor: pointer;
 }
+
+@media (max-width: 425px) {
+  span {
+    font-size: 14px;
+  }
+}

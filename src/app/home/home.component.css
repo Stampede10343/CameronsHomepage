@@ -19,3 +19,24 @@
 .overlay-text {
   color: white;
 }
+
+.headshot {
+  width: 27%;
+  margin: 2em 0 1em 0
+}
+
+@media (max-width: 768px) {
+  .headshot {
+    width: 40%;
+  }
+
+  .overlay-text {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  .overlay-text {
+    font-size: 24px;
+  }
+}

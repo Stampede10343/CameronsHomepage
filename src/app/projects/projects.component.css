@@ -5,7 +5,13 @@
 
 @media (max-width: 768px) {
   .project-item {
-    width: 75%;
+    width: 90%;
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 40%;
+    margin: 0 0 1em 0;
   }
 }
 

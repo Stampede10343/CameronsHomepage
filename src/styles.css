@@ -20,7 +20,7 @@ h1, h2, h3, p, span {
   margin: 1em auto;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .body-text {
     font-size: 14px;
     width: 80%;
@@ -37,9 +37,13 @@ h1, h2, h3, p, span {
   .subtitle {
     font-size: 14px;
   }
+
+  h4 {
+    font-size: 22px;
+  }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .body-text {
     font-size: 16px;
   }

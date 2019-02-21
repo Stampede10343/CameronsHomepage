@@ -2,15 +2,15 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {MatSidenavModule, MatToolbarModule} from "@angular/material";
+import {MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {ToolbarComponent} from './toolbar/toolbar.component';
-import {RouterModule, Routes} from "@angular/router";
+import {RouterModule, Routes} from '@angular/router';
 import {ResumeComponent} from './resume/resume.component';
 import {ContactComponent} from './contact/contact.component';
 import {HomeComponent} from './home/home.component';
 import {ProjectsComponent} from './projects/projects.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { ProjectKeywordPipe } from './project-keyword.pipe';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ProjectKeywordPipe} from './project-keyword.pipe';
 
 const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent, data: {state: 'resume'}},
@@ -31,7 +31,7 @@ const appRoutes: Routes = [
     ProjectKeywordPipe,
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {useHash: true}),
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -41,5 +41,6 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
