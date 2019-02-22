@@ -12,5 +12,6 @@ export class AnalyticsService {
 
   public trackPageHit(pageName: String) {
     OWATracker.setPageTitle(pageName);
+    OWATracker.trackPageView();
   }
 }
