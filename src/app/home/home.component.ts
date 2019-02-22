@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterContentInit, Component, OnInit} from '@angular/core';
+import {AnalyticsService} from '../analytics.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements AfterContentInit {
 
-  constructor() { }
+  constructor(private analytics: AnalyticsService) { }
 
-  ngOnInit() {
+  ngAfterContentInit(): void {
+    this.analytics.trackPageHit('Home');
   }
 
 }
