@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 
-declare var owa_cmds: Array<any>;
+declare var OWATracker;
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +11,7 @@ export class AnalyticsService {
   }
 
   public trackPageHit(pageName: String) {
-    if (typeof owa_cmds === 'object') {
-      owa_cmds.push(pageName);
-    }
+    OWATracker.setPageTitle(pageName);
+    OWATracker.trackPageView();
   }
 }
