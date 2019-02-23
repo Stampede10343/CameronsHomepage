@@ -47,7 +47,7 @@ export const routerTransition = trigger('routerTransition', [
 })
 export class AppComponent {
     constructor(private matomoInjector: MatomoInjector) {
-        this.matomoInjector.init('https://cameroncordes.me/piwik', 1);
+        this.matomoInjector.init('https://cameroncordes.me/piwik/', 1);
     }
 
   getState(outlet: RouterOutlet) {
