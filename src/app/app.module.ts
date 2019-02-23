@@ -11,6 +11,7 @@ import {HomeComponent} from './home/home.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ProjectKeywordPipe} from './project-keyword.pipe';
+import {MatomoModule} from 'ngx-matomo';
 
 const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent, data: {state: 'resume'}},
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatSidenavModule,
     RouterModule,
+    MatomoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
