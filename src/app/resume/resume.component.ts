@@ -1,5 +1,6 @@
 import {AfterContentInit, Component, OnInit} from '@angular/core';
 import {AnalyticsService} from '../analytics.service';
+import {MatomoTracker} from 'ngx-matomo';
 
 @Component({
   selector: 'app-resume',
@@ -9,12 +10,13 @@ import {AnalyticsService} from '../analytics.service';
 export class ResumeComponent implements AfterContentInit {
   private analytics: AnalyticsService;
 
-  constructor(analytics: AnalyticsService) {
+  constructor(analytics: AnalyticsService, private matomoTracker: MatomoTracker) {
     this.analytics = analytics;
   }
 
   ngAfterContentInit(): void {
     this.analytics.trackPageHit('Resume');
+    this.matomoTracker.trackPageView('Resume');
   }
 
 }
