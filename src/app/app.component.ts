@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {MatomoInjector} from 'ngx-matomo';
 import {animate, query, style, transition, trigger} from '@angular/animations';
+import { Angulartics2Piwik } from 'angulartics2/piwik';
 
 export const routerTransition = trigger('routerTransition', [
   transition('* <=> *', [
@@ -46,9 +46,9 @@ export const routerTransition = trigger('routerTransition', [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    constructor(private matomoInjector: MatomoInjector) {
-        this.matomoInjector.init('https://cameroncordes.me/piwik/', 1);
-    }
+  constructor(private matomo: Angulartics2Piwik) {
+    matomo.startTracking()
+  }
 
   getState(outlet: RouterOutlet) {
     return outlet.activatedRouteData.state;

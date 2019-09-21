@@ -1,5 +1,4 @@
 import {AfterContentInit, Component, OnInit} from '@angular/core';
-import {AnalyticsService} from '../analytics.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,11 +7,10 @@ import {AnalyticsService} from '../analytics.service';
 })
 export class ContactComponent implements AfterContentInit {
 
-  constructor(private analytics: AnalyticsService) {
+  constructor() {
   }
 
   ngAfterContentInit(): void {
-    this.analytics.trackPageHit('Contact');
   }
 
   linkedInClicked() {
