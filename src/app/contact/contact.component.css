@@ -24,28 +24,3 @@
   color: #0FA0CE;
   cursor: pointer;
 }
-
-@media (max-width: 768px) {
-  .icon-layout {
-    padding: .1em;
-    margin: .5em .25em .5em .25em
-  }
-
-  .subtitle {
-    margin: 1em .5em;
-  }
-}
-
-@media (max-width: 425px) {
-  .icon-layout {
-    font-size: 14px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .subtitle {
-    margin: 1em .5em;
-  }
-}

@@ -1,42 +1,14 @@
 .overlay {
   background: black;
-  position: relative;
+  position: fixed;
+  height: 100%;
 }
 
 .image {
   opacity: 0.1;
   width: 100%;
-  height: auto;
 }
 
 .home-container {
   background: #2f2f31;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
-
-.overlay-text {
-  color: white;
-}
-
-.headshot {
-  width: 27%;
-  margin: 2em 0 1em 0
-}
-
-@media (max-width: 768px) {
-  .headshot {
-    width: 40%;
-  }
-
-  .overlay-text {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 425px) {
-  .overlay-text {
-    font-size: 24px;
-  }
 }

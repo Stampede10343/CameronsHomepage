@@ -9,7 +9,7 @@ span {
 }
 
 span:hover {
-  color: #1DAEDD;
+  color: var(--nord7);
   cursor: pointer;
 }
 

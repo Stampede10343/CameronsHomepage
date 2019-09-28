@@ -1,17 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
-body {
-  margin: 0;
+h1, h2, h3, p, span {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 300;
 }
 
 html, body {
   height: 100%;
-}
-
-h1, h2, h3, p, span {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-weight: 300;
+  margin: 0;
 }
 
 .body-text {
@@ -19,6 +16,30 @@ h1, h2, h3, p, span {
   width: 50%;
   margin: 1em auto;
 }
+
+.dark-bg {
+  background-color: var(--nord0);
+}
+
+.dark-bg span, .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg p {
+  color: var(--nord4);
+}
+
+.tc-1 {
+  color: var(--nord7)!important;
+} 
+
+.tc-2 {
+  color: var(--nord8)!important;
+} 
+
+.tc-3 {
+  color: var(--nord9)!important;
+} 
+
+.tc-4 {
+  color: var(--nord10)!important;
+} 
 
 @media (max-width: 768px) {
   .body-text {
@@ -89,5 +110,5 @@ h1, h2, h3, p, span {
 }
 
 .active {
-  color: #1DAEDD;
+  color: var(--nord7);
 }
