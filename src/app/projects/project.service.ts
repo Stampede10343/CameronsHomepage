@@ -18,7 +18,8 @@ const projects = [
   {
     title: "Movies",
     applicationType: "Android Application (Kotlin)",
-    description: "<a href='https://github.com/Stampede10343/Movies_TMDb'>Movies</a> is an Android application for viewing movie and TV show info using the TMDB API. Movies is a Single Activity application, leveraging Model-View-View Model, Dagger 2, RxJava and SimpleStack for navigation. There is a focus on caching and a pleasant user experience even on slower networks by combining both in-memory and disk caching for quick load times, especially after a show details have been viewed."
+    description: "<a href='https://github.com/Stampede10343/Movies_TMDb'>Movies</a> is an Android application for viewing movie and TV show info using the TMDB API. Movies is a Single Activity application, leveraging Model-View-View Model, Dagger 2, RxJava and SimpleStack for navigation. There is a focus on caching and a pleasant user experience even on slower networks by combining both in-memory and disk caching for quick load times, especially after a show details have been viewed.",
+    imgLocation: ""
   },
   {
     title: "Secure Notes",

@@ -4,7 +4,7 @@ import {Pipe, PipeTransform} from '@angular/core';
   name: 'projectKeyword'
 })
 export class ProjectKeywordPipe implements PipeTransform {
-  private const keywords = [
+  private keywords = [
     'MySQL', 'Node', 'Express', 'RxJava', 'Dagger 2', 'Model View Presenter', 'Retrofit', 'Realm', 'Room', 'Model-View-View Model', 'SimpleStack'
   ];
 
