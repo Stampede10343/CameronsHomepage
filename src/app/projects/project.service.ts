@@ -16,9 +16,14 @@ export class ProjectService {
 
 const projects = [
   {
+    title: "Movies",
+    applicationType: "Android Application (Kotlin)",
+    description: "<a href='https://github.com/Stampede10343/Movies_TMDb'>Movies</a> is an Android application for viewing movie and TV show info using the TMDB API. Movies is a Single Activity application, leveraging Model-View-View Model, Dagger 2, RxJava and SimpleStack for navigation. There is a focus on caching and a pleasant user experience even on slower networks by combining both in-memory and disk caching for quick load times, especially after a show details have been viewed."
+  },
+  {
     title: "Secure Notes",
     applicationType: "Android Application (Kotlin)",
-    description: "Secure Notes is a simple note taking application with security in mind. There is a focus on clean" +
+    description: "<a href='https://github.com/Stampede10343/SecureNotes'>Secure Notes</a> is a simple note taking application with security in mind. There is a focus on clean" +
     " code, Model-View-View Model and loosely coupled components. I built this app to experiment with different" +
     " Android database libraries (Realm and Room), encryption and security, as well as a single Activity approach to" +
     " an Android app. (Under development).",
@@ -44,7 +49,7 @@ const projects = [
   {
     title: "Android Hues",
     applicationType: "Android Application (Kotlin)",
-    description: "Android Hues is an Android application to control your Phillips Hue lights at home. Hues uses RxJava," +
+    description: "<a href='https://github.com/Stampede10343/AndroidHues'>Android Hues</a> is an Android application to control your Phillips Hue lights at home. Hues uses RxJava," +
     " Dagger 2 and the Phillips Hue SDK in order to control the color, brightness and power state of your lights.",
     imgLocation: "../../assets/android-hues.png"
   }

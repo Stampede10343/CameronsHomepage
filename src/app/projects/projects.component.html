@@ -1,9 +1,10 @@
-<div class="center-column">
-  <div class="project-item" *ngFor="let project of projects">
-    <h4>{{project.title}}</h4>
-    <img src={{project.imgLocation}} width="50%" alt="{{project.title}} icon">
-    <p class="subtitle" style="margin: 0">{{project.applicationType}}</p>
-    <p class="thin-subtitle" [innerHTML]="project.description | projectKeyword"></p>
+<div class="row">
+  <div class="col col-lg-6 col-md-9 text-center mx-auto mt-5">
+    <div class="mb-5" *ngFor="let project of projects">
+      <h4>{{project.title}}</h4>
+      <img *ngIf="project.imgLocation" src={{project.imgLocation}} class="w-25" alt="{{project.title}} icon">
+      <p class="subtitle" style="margin: 0">{{project.applicationType}}</p>
+      <p class="thin-subtitle" [innerHTML]="project.description | projectKeyword"></p>
+    </div>
   </div>
-  <div style="height: 4em"></div>
 </div>
