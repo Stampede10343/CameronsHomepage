@@ -25,6 +25,10 @@ html, body {
   color: var(--nord4);
 }
 
+.light-bg {
+  background-color: var(--nord6);
+}
+
 .tc-1 {
   color: var(--nord7)!important;
 } 
