@@ -5,34 +5,30 @@ import { Angulartics2Piwik } from 'angulartics2/piwik';
 
 export const routerTransition = trigger('routerTransition', [
   transition('* <=> *', [
-    // Initial state of new route
     query(':enter',
       style({
         position: 'fixed',
         width: '100%',
-        // transform: 'translateX(-100%)'
+        height: '100%',
         opacity: 0
       }),
       {optional: true}),
 
-    // move page off screen right on leave
     query(':leave',
       animate('300ms ease-in-out',
         style({
           position: 'fixed',
           width: '100%',
-          // transform: 'translateX(100%)'
+          height: '100%',
           opacity: 0
         })
       ),
       {optional: true}),
 
-    // move page in screen from left to right
     query(':enter',
       animate('300ms ease-in-out',
         style({
           opacity: 1,
-          // transform: 'translateX(0%)'
         })
       ),
       {optional: true}),
