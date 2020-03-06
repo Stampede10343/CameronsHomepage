@@ -2,7 +2,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {MatSidenavModule, MatToolbarModule} from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import {RouterModule, Routes} from '@angular/router';
 import {ResumeComponent} from './resume/resume.component';
