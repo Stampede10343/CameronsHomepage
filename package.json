@@ -24,7 +24,7 @@
     "@angular/platform-browser": "^9.0.5",
     "@angular/platform-browser-dynamic": "^9.0.5",
     "@angular/router": "^9.0.5",
-    "angulartics2": "^8.1.0",
+    "angulartics2": "^8.3.0",
     "core-js": "^2.5.4",
     "json-schema-traverse": "^0.4.1",
     "rxjs": "~6.5.4",
