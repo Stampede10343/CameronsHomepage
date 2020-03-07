@@ -1,4 +1,4 @@
-FROM node:10.19.0-alpine3.9
+FROM node:13.10-alpine
 WORKDIR /app
 VOLUME /app /app/dist
 ENTRYPOINT npm install && export PATH=$PATH:/app/node_modules/.bin \
