@@ -1,7 +1,8 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ToolbarComponent} from './toolbar.component';
-import {MatSidenavModule, MatToolbarModule} from "@angular/material";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatToolbarModule } from "@angular/material/toolbar";
 import {RouterTestingModule} from "@angular/router/testing";
 import {Component} from "@angular/core";
 
