@@ -21,7 +21,7 @@ const appRoutes: Routes = [
   {path: 'projects', component: ProjectsComponent, data: {state: 'project'}},
   {path: 'contact', component: ContactComponent, data: {state: 'contact'}},
   {path: 'home', component: HomeComponent, data: {state: 'home'}},
-  {path: '', pathMatch: 'full', redirectTo: 'home'}
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({
@@ -35,7 +35,7 @@ const appRoutes: Routes = [
     ProjectKeywordPipe,
   ],
   imports: [
-    RouterModule.forRoot(appRoutes, {useHash: true}),
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
