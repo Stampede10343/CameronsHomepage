@@ -41,8 +41,9 @@ describe('ToolbarComponent', () => {
 
   it('should contain 4 links, Home, Resume, Projects, Contact', () => {
     let debugElements = fixture.debugElement.queryAll((element) => {
-      return element.nativeElement.class == 'span'
+      return element.nativeElement.className.indexOf("mat-toolbar") != -1;
     });
-    expect(debugElements[0].nativeElement).toBe("span");
+
+    expect(debugElements[0].children.length).toBe(4);
   });
 });
