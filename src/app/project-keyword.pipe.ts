@@ -5,14 +5,24 @@ import {Pipe, PipeTransform} from '@angular/core';
 })
 export class ProjectKeywordPipe implements PipeTransform {
   private keywords = [
-    'MySQL', 'Node', 'Express', 'RxJava', 'Dagger 2', 'Model View Presenter', 'Retrofit', 'Realm', 'Room', 'Model-View-View Model', 'SimpleStack'
+    'MySQL',
+    'Node',
+    'Express',
+    'RxJava',
+    'Dagger 2',
+    'Model View Presenter',
+    'Retrofit',
+    'Realm',
+    'Room',
+    'Model-View-View Model',
+    'SimpleStack'
   ];
 
   transform(value: String, args?: any): any {
     this.keywords.forEach(keyword => {
-      let keywordIndex = value.indexOf(keyword);
-      if (keywordIndex != -1) {
-        let boldKeyword = '<b>' + value.substring(keywordIndex, keywordIndex + keyword.length) + '</b>';
+      const keywordIndex = value.indexOf(keyword);
+      if (keywordIndex !== -1) {
+        const boldKeyword = '<b>' + value.substring(keywordIndex, keywordIndex + keyword.length) + '</b>';
         value = value.replace(keyword, boldKeyword);
       }
     });

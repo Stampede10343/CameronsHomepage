@@ -43,7 +43,7 @@ export const routerTransition = trigger('routerTransition', [
 })
 export class AppComponent {
   constructor(private matomo: Angulartics2Piwik) {
-    matomo.startTracking()
+    matomo.startTracking();
   }
 
   getState(outlet: RouterOutlet) {
