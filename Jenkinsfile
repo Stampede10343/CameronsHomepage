@@ -24,7 +24,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'node_modules/.bin/ng test --watch=false --progress=false --browsers=ChomeHeadlessCI'
+        sh 'node_modules/.bin/ng test --watch=false --progress=false'
       }
     }
   }
