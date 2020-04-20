@@ -2,4 +2,4 @@ FROM node:13.10-alpine
 WORKDIR /app
 RUN apk add --no-cache chromium
 ADD . /app
-ENTRYPOINT npm install && /app/node_modules/.bin/ng test --watch=false --progress=false --browsers=ChomeHeadlessCI
+CMD ["bash"]
