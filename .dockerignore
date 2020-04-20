@@ -1,4 +1,6 @@
 .git*
 .idea/
 dist/
-Dockerfile
+output/
+node_modules/
+Dockerfile*
