@@ -24,7 +24,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'node_modules/.bin/ng test --watch=false --progress=false'
+        sh 'node_modules/.bin/ng test --watch=false --progress=false --browsers=ChromeHeadless'
       }
     }
   }

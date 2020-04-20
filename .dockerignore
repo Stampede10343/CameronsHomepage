@@ -4,3 +4,4 @@ dist/
 output/
 node_modules/
 Dockerfile*
+junit-report/
