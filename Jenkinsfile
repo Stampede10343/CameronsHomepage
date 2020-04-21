@@ -28,5 +28,11 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      archiveArtifacts artifacts: 'dist/Homepage/**', fingerprint: true
+      junit 'src/junit-report/**/*.xml'
+    }
+  }
 }
 
