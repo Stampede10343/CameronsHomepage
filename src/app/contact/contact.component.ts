@@ -36,6 +36,6 @@ export class ContactComponent implements AfterContentInit {
               category: 'Contact',
               label: label
           }
-      }
+      };
   }
 }
