@@ -1,4 +1,4 @@
-span {
+a {
   margin-left: 1em;
   margin-right: 1em;
   -webkit-transition: color 300ms;
@@ -8,13 +8,20 @@ span {
   transition: color 300ms;
 }
 
-span:hover {
-  color: var(--nord7);
-  cursor: pointer;
+a:hover {
+  color: var(--nord13);
 }
 
 @media (max-width: 425px) {
-  span {
-    font-size: 14px;
+  a {
+    font-size: 15px;
+    margin-left: .8em;
+    margin-right: .8em;
   }
 }
+
+a {
+  color: var(--nord4);
+  text-decoration: none;
+}
+
