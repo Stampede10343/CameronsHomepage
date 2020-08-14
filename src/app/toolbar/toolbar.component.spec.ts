@@ -36,12 +36,12 @@ describe('ToolbarComponent', () => {
   });
 
   it('should contain a material toolbar', () => {
-    expect(fixture.debugElement.children[0].nativeElement.className).toBe('mat-drawer-container mat-sidenav-container');
+    expect(fixture.debugElement.children[0].nativeElement.className).toBe('mat-toolbar mat-toolbar-multiple-rows');
   });
 
   it('should contain 4 links, Home, Resume, Projects, Contact', () => {
     const debugElements = fixture.debugElement.queryAll((element) => {
-      return element.nativeElement.className.indexOf('mat-toolbar') !== -1;
+      return element.nativeElement.className.indexOf('mat-toolbar-row') !== -1;
     });
 
     expect(debugElements[0].children.length).toBe(4);
