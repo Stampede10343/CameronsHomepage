@@ -1,6 +1,28 @@
-@media (max-width: 768px) {
-  img {
-    max-width: 40%;
-    margin: 0 0 1em 0;
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr) );
+  align-content: start;
+  margin: 1rem;
+}
+
+:host /deep/ a {
+  color: var(--nord13);
+}
+
+:host /deep/ a:hover {
+  color: var(--nord11);
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  -ms-transition: color 300ms;
+  -o-transition: color 300ms;
+  transition: color 300ms;
+  text-decoration: none;
+}
+
+@media(max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0.5rem;
   }
 }
