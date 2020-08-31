@@ -1,9 +1,11 @@
-<div class="row">
-  <div class="col col-lg-6 col-md-9 text-center mx-auto mt-5">
-    <div class="mb-5" *ngFor="let project of projects">
+<div class="row dark-bg h-100">
+  <div class="grid">
+    <div *ngFor="let project of projects"
+      class="text-center shadow d-flex flex-column justify-content-around p-3 h-100"
+      style="background-color: var(--nord1)">
+      <img *ngIf="project.imgLocation" src={{project.imgLocation}} class="mx-auto mb-3 w-25" alt="{{project.title}} icon">
       <h4>{{project.title}}</h4>
-      <img *ngIf="project.imgLocation" src={{project.imgLocation}} class="w-25" alt="{{project.title}} icon">
-      <p class="subtitle" style="margin: 0">{{project.applicationType}}</p>
+      <span class="subtitle">{{project.applicationType}}</span>
       <p class="thin-subtitle" [innerHTML]="project.description | projectKeyword"></p>
     </div>
   </div>

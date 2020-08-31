@@ -21,7 +21,7 @@ html, body {
   background-color: var(--nord0);
 }
 
-.dark-bg span, .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg p {
+.dark-bg span, .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg p {
   color: var(--nord4);
 }
 
