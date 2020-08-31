@@ -10,13 +10,27 @@ const projects = [
     imgLocation: ''
   },
   {
+    title: 'G Music Migrator',
+    applicationType: 'Python script',
+    // tslint:disable-next-line:max-line-length
+    description: '<a href="https://github.com/Stampede10343/GMusicMigrator">G Music Migrator</a> is a Python script to export your playlists from Google Play Music and then import them to Spotify. Using the Spotify and Play Music APIs the script would semi-automatically search for each song and prompt the user to select which option to chose if the choice was ambiguous.',
+    imgLocation: ''
+  },
+  {
+    title: 'Rack',
+    applicationType: 'Rust application',
+    // tslint:disable-next-line:max-line-length
+    description: '<a href="https://git.crkc.xyz/Apps/Rack">Rack</a> is a bare bones cli search tool, like grep or ack. Rack was a simple project to learn about Rust and its borrow checker. Rust proved to be fun to work in, with great language features while still being low level and insanely quick!',
+    imgLocation: ''
+  },
+  {
     title: 'Secure Notes',
     applicationType: 'Android Application (Kotlin)',
     // tslint:disable-next-line:max-line-length
     description: '<a href="https://github.com/Stampede10343/SecureNotes">Secure Notes</a> is a simple note taking application with security in mind. There is a focus on clean' +
     ' code, Model-View-View Model and loosely coupled components. I built this app to experiment with different' +
     ' Android database libraries (Realm and Room), encryption and security, as well as a single Activity approach to' +
-    ' an Android app. (Under development).',
+    ' an Android app.',
     imgLocation: '../../assets/note-icon.png'
   },
   {
