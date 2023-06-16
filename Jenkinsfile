@@ -27,6 +27,28 @@ pipeline {
         sh 'node_modules/.bin/ng test --watch=false --progress=false --browsers=ChromeHeadlessCI'
       }
     }
+
+    stage('deploy') {
+        when { branch 'master' }
+
+        steps {
+            echo 'Deploying'
+
+            sshPublisher(
+                publishers: [
+                    sshPublisherDesc(
+                    configName: 'droplet-ssh",
+                    transfers: [
+                        sshTransfer(
+                            sourceFiles: 'dist/Homepage/**',
+                            remoteDirectory: '/home/cameron/docker/homepage/html',
+                            execCommand: 'echo Finished'
+                        )
+                    ]
+                ]
+            )
+        }
+    }
   }
   post {
     always {
